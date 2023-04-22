@@ -1,4 +1,4 @@
-symbol,country,currency,exchange,finnhubIndustry,marketCapitalization,name,shareOutstanding,ticker
+Symbol,country,currency,exchange,finnhubIndustry,marketCapitalization,name,shareOutstanding,ticker
 ULCC,US,USD,NASDAQ NMS - GLOBAL MARKET,Airlines,1986.525212133262,Frontier Group Holdings Inc,218.06,ULCC
 RPD,US,USD,NASDAQ NMS - GLOBAL MARKET,Technology,2328.3775184851534,Rapid7 Inc,60.0407,RPD
 GPRK,CO,USD,"NEW YORK STOCK EXCHANGE, INC.",Energy ,629.8845340623852,GeoPark Ltd,60.0462,GPRK
