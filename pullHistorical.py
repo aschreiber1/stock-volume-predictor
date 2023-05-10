@@ -4,6 +4,8 @@ import csv
 import os
 import math
 
+#pull historical stock price data from yahoo finance API
+
 SYMBOLS_FILE = "symbols.json"
 COMMON_STOCK = "Common Stock"
 HISTORY_FILE = 'history.csv'

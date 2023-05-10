@@ -6,6 +6,8 @@ import yfinance as yf
 import csv
 import time
 
+# Pull Symbol data from finnhub
+
 SYMBOLS_FILE = "symbols.json"
 COMPANY_INFO_FILE = "comp_info.csv"
 COMMON_STOCK = "Common Stock"

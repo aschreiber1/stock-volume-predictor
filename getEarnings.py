@@ -5,6 +5,7 @@ import os
 from datetime import datetime, timedelta, timezone
 import concurrent.futures
 
+#Get earnings data from yahoo finance api
 
 SYMBOLS_FILE = "symbols.json"
 EARNINGS_FILE = "earnings.csv"
