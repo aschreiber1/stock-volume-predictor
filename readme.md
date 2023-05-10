@@ -73,4 +73,6 @@ There were many ideas we tried in the model building process that in theory coul
 3. Adding in extra date features like 'Day of Year' and 'Day of Month'. Adding in these features caused our model to lose accuracy
 4. Many different strategies for transforming Symbol into a number. This is a tricky problem as there are over 5K different symbols, so doing One Hot classification creates an enourmous amount of features. We tried out many different approaches for this, random numbers, Base 2 based feature columns
 
-
+## Future Work
+1. The biggest current flaw in the project is the scaling of the volume data and the amount of symbols that are being sent to zero because they are very tiny in the grand scheme of things. 
+2. Implement distributed training to be able to train even faster then the 2 minutes of current trinaing time. 
