@@ -65,6 +65,7 @@ After doing the optimizations we saw training time go down 116 seconds, 1.81 tim
 
 
 ## Quantization
+Out of the different kinds of Quantization methods, the one most apt for our model was Dynamic Quantization. In the context of GRU, Dynamic Quantization involves quantizing the weights and activations of the GRU model dynamically during runtime. This means that the quantization process occurs while the model is being executed, as opposed to static quantization, which quantizes the model offline before deployment. A GRU cannot be statically quantized. This also means that there is no training or optimization of weights and biases after quantization. To implement this we quantize our previously trained GRU model( saved as a state dict). After quantization, the results were optimal. The model size reduced by 329%, but this did not lead to any quantization loss, error, or degradation as we achieved an r^2 value of 0.84. However, Pytorch's implementation of Dynamic Quantization is not supported on a cuda backend, hence these quantized evaluations were done on the cpu. Hence calculation of evaluation speedup's would not be consistent across different hosts.
 
 ## Some notes on the many things we tried and failed on
 There were many ideas we tried in the model building process that in theory could have helped but did work. These would include:
